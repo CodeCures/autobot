@@ -13,7 +13,7 @@ class InitAutobotCreationJob implements ShouldQueue
 {
     use Queueable;
 
-    protected $hourCount = 1; // 50 * 10 = 500
+    protected $hourCount = 50; // 50 * 10 = 500
     /**
      * Create a new job instance.
      */
