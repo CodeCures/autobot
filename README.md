@@ -1,40 +1,64 @@
 ## Installation
+- clone the project 
+```bash 
+git clone https://github.com/CodeCures/autobot.git
+```
+- run to create a copy of .env file
+```bash
+ cp .env.example .env
+```
+- Setup you database credentials
+```bash
+ DB_CONNECTION=mysql
+ DB_HOST=127.0.0.1
+ DB_PORT=3306
+ DB_DATABASE=autobots_db
+ DB_USERNAME=root
+ DB_PASSWORD=
+```
+- Generate app key by running
+```bash
+ php artisan key:generate
+```
+- Migrate your database by running
+```bash
+ php artisan migrate
+```
+- Install required javascript packages
+```bash
+ npm install
+```
+- start vite server
+```bash
+ npm run dev
+```
 
+- start vite server
+```bash
+ npm run dev
+```
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+- the app is heavily dependent of background jobs so you might want to run
+```bash
+ php artisan queue:listen --timeout=0
+```
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+```bash
+ php artisan schedule:work
+```
 
-## Learning Laravel
+- you can now start the app by running
+```bash
+ php artisan serve
+```
+or visit http://autobot.test if you are using laravel herd
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+# **Note**
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+The app uses the eloquent factory and jobs to generate the autobot data, the throttling rate limiter is provided in the app service prodiver so you might want to take a look at those files to understand the logic
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
-
-## Laravel Sponsors
-
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
-
-### Premium Partners
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+# API documentation
+```bash
+ {YOUR_DOMAIN}/docs/index.html
+```
+Example: http://autobot.test/docs/index.html
