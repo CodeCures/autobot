@@ -132,7 +132,7 @@ You can switch the language used with the tabs at the top right (or from the nav
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "http://autobot.test/api/autobots" \
+    --get "http://autobot.test/api/autobots?offset=qui" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
@@ -141,6 +141,12 @@ You can switch the language used with the tabs at the top right (or from the nav
     <pre><code class="language-javascript">const url = new URL(
     "http://autobot.test/api/autobots"
 );
+
+const params = {
+    "offset": "qui",
+};
+Object.keys(params)
+    .forEach(key =&gt; url.searchParams.append(key, params[key]));
 
 const headers = {
     "Content-Type": "application/json",
@@ -171,7 +177,7 @@ access-control-allow-origin: *
 
 <code class="language-json" style="max-height: 300px;">[
     {
-        &quot;id&quot;: &quot;9cd54948-e8d9-4d8e-a694-18f4aa1a1ff7&quot;,
+        &quot;id&quot;: &quot;9cd57961-3d79-4ecd-9ac7-7ad94aefa144&quot;,
         &quot;name&quot;: &quot;Leanne Graham&quot;,
         &quot;username&quot;: &quot;Bret&quot;,
         &quot;email&quot;: &quot;Sincere@april.biz&quot;,
@@ -192,11 +198,11 @@ access-control-allow-origin: *
             &quot;name&quot;: &quot;Romaguera-Crona&quot;,
             &quot;catchPhrase&quot;: &quot;Multi-layered client-server neural-net&quot;
         },
-        &quot;created_at&quot;: &quot;2024-08-23T07:38:34.000000Z&quot;,
-        &quot;updated_at&quot;: &quot;2024-08-23T07:38:34.000000Z&quot;
+        &quot;created_at&quot;: &quot;2024-08-23T09:53:03.000000Z&quot;,
+        &quot;updated_at&quot;: &quot;2024-08-23T09:53:03.000000Z&quot;
     },
     {
-        &quot;id&quot;: &quot;9cd5494d-82b3-4b63-8a44-fe545d4f88e2&quot;,
+        &quot;id&quot;: &quot;9cd57962-5de7-4f23-abe7-d3c4ae62434e&quot;,
         &quot;name&quot;: &quot;Ervin Howell&quot;,
         &quot;username&quot;: &quot;Antonette&quot;,
         &quot;email&quot;: &quot;Shanna@melissa.tv&quot;,
@@ -217,11 +223,11 @@ access-control-allow-origin: *
             &quot;name&quot;: &quot;Deckow-Crist&quot;,
             &quot;catchPhrase&quot;: &quot;Proactive didactic contingency&quot;
         },
-        &quot;created_at&quot;: &quot;2024-08-23T07:38:37.000000Z&quot;,
-        &quot;updated_at&quot;: &quot;2024-08-23T07:38:37.000000Z&quot;
+        &quot;created_at&quot;: &quot;2024-08-23T09:53:04.000000Z&quot;,
+        &quot;updated_at&quot;: &quot;2024-08-23T09:53:04.000000Z&quot;
     },
     {
-        &quot;id&quot;: &quot;9cd5494e-a01f-49e8-abf9-6df29a3e37df&quot;,
+        &quot;id&quot;: &quot;9cd57963-6f39-4b2d-b590-027b63be2254&quot;,
         &quot;name&quot;: &quot;Clementine Bauch&quot;,
         &quot;username&quot;: &quot;Samantha&quot;,
         &quot;email&quot;: &quot;Nathan@yesenia.net&quot;,
@@ -242,11 +248,11 @@ access-control-allow-origin: *
             &quot;name&quot;: &quot;Romaguera-Jacobson&quot;,
             &quot;catchPhrase&quot;: &quot;Face to face bifurcated interface&quot;
         },
-        &quot;created_at&quot;: &quot;2024-08-23T07:38:38.000000Z&quot;,
-        &quot;updated_at&quot;: &quot;2024-08-23T07:38:38.000000Z&quot;
+        &quot;created_at&quot;: &quot;2024-08-23T09:53:05.000000Z&quot;,
+        &quot;updated_at&quot;: &quot;2024-08-23T09:53:05.000000Z&quot;
     },
     {
-        &quot;id&quot;: &quot;9cd5494f-c092-49fa-b6f2-1bae3ab6e3ca&quot;,
+        &quot;id&quot;: &quot;9cd57965-214e-43a2-a4c9-0939bbedb8e9&quot;,
         &quot;name&quot;: &quot;Patricia Lebsack&quot;,
         &quot;username&quot;: &quot;Karianne&quot;,
         &quot;email&quot;: &quot;Julianne.OConner@kory.org&quot;,
@@ -267,11 +273,11 @@ access-control-allow-origin: *
             &quot;name&quot;: &quot;Robel-Corkery&quot;,
             &quot;catchPhrase&quot;: &quot;Multi-tiered zero tolerance productivity&quot;
         },
-        &quot;created_at&quot;: &quot;2024-08-23T07:38:39.000000Z&quot;,
-        &quot;updated_at&quot;: &quot;2024-08-23T07:38:39.000000Z&quot;
+        &quot;created_at&quot;: &quot;2024-08-23T09:53:06.000000Z&quot;,
+        &quot;updated_at&quot;: &quot;2024-08-23T09:53:06.000000Z&quot;
     },
     {
-        &quot;id&quot;: &quot;9cd54950-c9fc-4648-aac4-432440bc10d5&quot;,
+        &quot;id&quot;: &quot;9cd57966-494f-4f36-89df-50b15d1f5cc5&quot;,
         &quot;name&quot;: &quot;Chelsey Dietrich&quot;,
         &quot;username&quot;: &quot;Kamren&quot;,
         &quot;email&quot;: &quot;Lucio_Hettinger@annie.ca&quot;,
@@ -292,11 +298,11 @@ access-control-allow-origin: *
             &quot;name&quot;: &quot;Keebler LLC&quot;,
             &quot;catchPhrase&quot;: &quot;User-centric fault-tolerant solution&quot;
         },
-        &quot;created_at&quot;: &quot;2024-08-23T07:38:39.000000Z&quot;,
-        &quot;updated_at&quot;: &quot;2024-08-23T07:38:39.000000Z&quot;
+        &quot;created_at&quot;: &quot;2024-08-23T09:53:07.000000Z&quot;,
+        &quot;updated_at&quot;: &quot;2024-08-23T09:53:07.000000Z&quot;
     },
     {
-        &quot;id&quot;: &quot;9cd54951-f1e0-479e-b3c3-8755abd0fbb8&quot;,
+        &quot;id&quot;: &quot;9cd57967-584f-4926-b3a0-580df58dc34e&quot;,
         &quot;name&quot;: &quot;Mrs. Dennis Schulist&quot;,
         &quot;username&quot;: &quot;Leopoldo_Corkery&quot;,
         &quot;email&quot;: &quot;Karley_Dach@jasper.info&quot;,
@@ -317,11 +323,11 @@ access-control-allow-origin: *
             &quot;name&quot;: &quot;Considine-Lockman&quot;,
             &quot;catchPhrase&quot;: &quot;Synchronised bottom-line interface&quot;
         },
-        &quot;created_at&quot;: &quot;2024-08-23T07:38:40.000000Z&quot;,
-        &quot;updated_at&quot;: &quot;2024-08-23T07:38:40.000000Z&quot;
+        &quot;created_at&quot;: &quot;2024-08-23T09:53:07.000000Z&quot;,
+        &quot;updated_at&quot;: &quot;2024-08-23T09:53:07.000000Z&quot;
     },
     {
-        &quot;id&quot;: &quot;9cd54953-3020-4a20-822c-6311afc67996&quot;,
+        &quot;id&quot;: &quot;9cd57968-8db1-420c-b219-29c0f49edc81&quot;,
         &quot;name&quot;: &quot;Kurtis Weissnat&quot;,
         &quot;username&quot;: &quot;Elwyn.Skiles&quot;,
         &quot;email&quot;: &quot;Telly.Hoeger@billy.biz&quot;,
@@ -342,11 +348,11 @@ access-control-allow-origin: *
             &quot;name&quot;: &quot;Johns Group&quot;,
             &quot;catchPhrase&quot;: &quot;Configurable multimedia task-force&quot;
         },
-        &quot;created_at&quot;: &quot;2024-08-23T07:38:41.000000Z&quot;,
-        &quot;updated_at&quot;: &quot;2024-08-23T07:38:41.000000Z&quot;
+        &quot;created_at&quot;: &quot;2024-08-23T09:53:08.000000Z&quot;,
+        &quot;updated_at&quot;: &quot;2024-08-23T09:53:08.000000Z&quot;
     },
     {
-        &quot;id&quot;: &quot;9cd54954-5dc0-4a35-9abd-d745bf0d9eb2&quot;,
+        &quot;id&quot;: &quot;9cd5796a-4dd9-4427-a3c0-be2dd1463ea3&quot;,
         &quot;name&quot;: &quot;Nicholas Runolfsdottir V&quot;,
         &quot;username&quot;: &quot;Maxime_Nienow&quot;,
         &quot;email&quot;: &quot;Sherwood@rosamond.me&quot;,
@@ -367,11 +373,11 @@ access-control-allow-origin: *
             &quot;name&quot;: &quot;Abernathy Group&quot;,
             &quot;catchPhrase&quot;: &quot;Implemented secondary concept&quot;
         },
-        &quot;created_at&quot;: &quot;2024-08-23T07:38:42.000000Z&quot;,
-        &quot;updated_at&quot;: &quot;2024-08-23T07:38:42.000000Z&quot;
+        &quot;created_at&quot;: &quot;2024-08-23T09:53:09.000000Z&quot;,
+        &quot;updated_at&quot;: &quot;2024-08-23T09:53:09.000000Z&quot;
     },
     {
-        &quot;id&quot;: &quot;9cd54955-6eb6-4e46-a46d-be85d719572b&quot;,
+        &quot;id&quot;: &quot;9cd5796b-647c-41b1-af6c-5174ed4e7602&quot;,
         &quot;name&quot;: &quot;Glenna Reichert&quot;,
         &quot;username&quot;: &quot;Delphine&quot;,
         &quot;email&quot;: &quot;Chaim_McDermott@dana.io&quot;,
@@ -392,11 +398,11 @@ access-control-allow-origin: *
             &quot;name&quot;: &quot;Yost and Sons&quot;,
             &quot;catchPhrase&quot;: &quot;Switchable contextually-based project&quot;
         },
-        &quot;created_at&quot;: &quot;2024-08-23T07:38:43.000000Z&quot;,
-        &quot;updated_at&quot;: &quot;2024-08-23T07:38:43.000000Z&quot;
+        &quot;created_at&quot;: &quot;2024-08-23T09:53:10.000000Z&quot;,
+        &quot;updated_at&quot;: &quot;2024-08-23T09:53:10.000000Z&quot;
     },
     {
-        &quot;id&quot;: &quot;9cd54956-a0e1-4b4e-8438-d73a417f7c47&quot;,
+        &quot;id&quot;: &quot;9cd5796c-770b-47c8-920b-81e8d7c766a6&quot;,
         &quot;name&quot;: &quot;Clementina DuBuque&quot;,
         &quot;username&quot;: &quot;Moriah.Stanton&quot;,
         &quot;email&quot;: &quot;Rey.Padberg@karina.biz&quot;,
@@ -417,8 +423,8 @@ access-control-allow-origin: *
             &quot;name&quot;: &quot;Hoeger LLC&quot;,
             &quot;catchPhrase&quot;: &quot;Centralized empowering task-force&quot;
         },
-        &quot;created_at&quot;: &quot;2024-08-23T07:38:43.000000Z&quot;,
-        &quot;updated_at&quot;: &quot;2024-08-23T07:38:43.000000Z&quot;
+        &quot;created_at&quot;: &quot;2024-08-23T09:53:11.000000Z&quot;,
+        &quot;updated_at&quot;: &quot;2024-08-23T09:53:11.000000Z&quot;
     }
 ]</code>
  </pre>
@@ -492,7 +498,19 @@ You can check the Dev Tools console for debugging information.</code></pre>
     <br>
 <p>Example: <code>application/json</code></p>
             </div>
-                        </form>
+                            <h4 class="fancy-heading-panel"><b>Query Parameters</b></h4>
+                                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>offset</code></b>&nbsp;&nbsp;
+<small>string</small>&nbsp;
+<i>optional</i> &nbsp;
+                <input type="text" style="display: none"
+                              name="offset"                data-endpoint="GETapi-autobots"
+               value="qui"
+               data-component="query">
+    <br>
+<p>Field determine where to start selecting data from. Defaults to '0' Example: <code>qui</code></p>
+            </div>
+                </form>
 
                     <h2 id="endpoints-GETapi-autobots--autobot_id-">GET api/autobots/{autobot_id}</h2>
 
@@ -507,14 +525,14 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "http://autobot.test/api/autobots/9cd54948-e8d9-4d8e-a694-18f4aa1a1ff7" \
+    --get "http://autobot.test/api/autobots/9cd57961-3d79-4ecd-9ac7-7ad94aefa144" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://autobot.test/api/autobots/9cd54948-e8d9-4d8e-a694-18f4aa1a1ff7"
+    "http://autobot.test/api/autobots/9cd57961-3d79-4ecd-9ac7-7ad94aefa144"
 );
 
 const headers = {
@@ -545,7 +563,7 @@ access-control-allow-origin: *
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
-    &quot;id&quot;: &quot;9cd54948-e8d9-4d8e-a694-18f4aa1a1ff7&quot;,
+    &quot;id&quot;: &quot;9cd57961-3d79-4ecd-9ac7-7ad94aefa144&quot;,
     &quot;name&quot;: &quot;Leanne Graham&quot;,
     &quot;username&quot;: &quot;Bret&quot;,
     &quot;email&quot;: &quot;Sincere@april.biz&quot;,
@@ -566,8 +584,8 @@ access-control-allow-origin: *
         &quot;name&quot;: &quot;Romaguera-Crona&quot;,
         &quot;catchPhrase&quot;: &quot;Multi-layered client-server neural-net&quot;
     },
-    &quot;created_at&quot;: &quot;2024-08-23T07:38:34.000000Z&quot;,
-    &quot;updated_at&quot;: &quot;2024-08-23T07:38:34.000000Z&quot;
+    &quot;created_at&quot;: &quot;2024-08-23T09:53:03.000000Z&quot;,
+    &quot;updated_at&quot;: &quot;2024-08-23T09:53:03.000000Z&quot;
 }</code>
  </pre>
     </span>
@@ -647,10 +665,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="autobot_id"                data-endpoint="GETapi-autobots--autobot_id-"
-               value="9cd54948-e8d9-4d8e-a694-18f4aa1a1ff7"
+               value="9cd57961-3d79-4ecd-9ac7-7ad94aefa144"
                data-component="url">
     <br>
-<p>The ID of the autobot. Example: <code>9cd54948-e8d9-4d8e-a694-18f4aa1a1ff7</code></p>
+<p>The ID of the autobot. Example: <code>9cd57961-3d79-4ecd-9ac7-7ad94aefa144</code></p>
             </div>
                     </form>
 
@@ -667,15 +685,21 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "http://autobot.test/api/autobots/9cd54948-e8d9-4d8e-a694-18f4aa1a1ff7/posts" \
+    --get "http://autobot.test/api/autobots/9cd57961-3d79-4ecd-9ac7-7ad94aefa144/posts?offset=temporibus" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://autobot.test/api/autobots/9cd54948-e8d9-4d8e-a694-18f4aa1a1ff7/posts"
+    "http://autobot.test/api/autobots/9cd57961-3d79-4ecd-9ac7-7ad94aefa144/posts"
 );
+
+const params = {
+    "offset": "temporibus",
+};
+Object.keys(params)
+    .forEach(key =&gt; url.searchParams.append(key, params[key]));
 
 const headers = {
     "Content-Type": "application/json",
@@ -706,84 +730,84 @@ access-control-allow-origin: *
 
 <code class="language-json" style="max-height: 300px;">[
     {
-        &quot;id&quot;: &quot;9cd54c3d-4d5d-4108-ab87-c1b72725c9e3&quot;,
-        &quot;autobot_id&quot;: &quot;9cd54948-e8d9-4d8e-a694-18f4aa1a1ff7&quot;,
+        &quot;id&quot;: &quot;9cd5796d-989e-4cd1-b8e2-738934b29cfb&quot;,
+        &quot;autobot_id&quot;: &quot;9cd57961-3d79-4ecd-9ac7-7ad94aefa144&quot;,
         &quot;title&quot;: &quot;sunt aut facere repellat provident occaecati excepturi optio reprehenderit&quot;,
         &quot;body&quot;: &quot;quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto&quot;,
-        &quot;created_at&quot;: &quot;2024-08-23T07:46:50.000000Z&quot;,
-        &quot;updated_at&quot;: &quot;2024-08-23T07:46:50.000000Z&quot;
+        &quot;created_at&quot;: &quot;2024-08-23T09:53:11.000000Z&quot;,
+        &quot;updated_at&quot;: &quot;2024-08-23T09:53:11.000000Z&quot;
     },
     {
-        &quot;id&quot;: &quot;9cd54c3e-ba90-4d39-bbda-f2951232d819&quot;,
-        &quot;autobot_id&quot;: &quot;9cd54948-e8d9-4d8e-a694-18f4aa1a1ff7&quot;,
+        &quot;id&quot;: &quot;9cd5796f-6a14-422d-80c1-966f7ba0c33d&quot;,
+        &quot;autobot_id&quot;: &quot;9cd57961-3d79-4ecd-9ac7-7ad94aefa144&quot;,
         &quot;title&quot;: &quot;qui est esse&quot;,
         &quot;body&quot;: &quot;est rerum tempore vitae\nsequi sint nihil reprehenderit dolor beatae ea dolores neque\nfugiat blanditiis voluptate porro vel nihil molestiae ut reiciendis\nqui aperiam non debitis possimus qui neque nisi nulla&quot;,
-        &quot;created_at&quot;: &quot;2024-08-23T07:46:51.000000Z&quot;,
-        &quot;updated_at&quot;: &quot;2024-08-23T07:46:51.000000Z&quot;
+        &quot;created_at&quot;: &quot;2024-08-23T09:53:13.000000Z&quot;,
+        &quot;updated_at&quot;: &quot;2024-08-23T09:53:13.000000Z&quot;
     },
     {
-        &quot;id&quot;: &quot;9cd54c3f-dea3-4185-a790-40b0c4344738&quot;,
-        &quot;autobot_id&quot;: &quot;9cd54948-e8d9-4d8e-a694-18f4aa1a1ff7&quot;,
+        &quot;id&quot;: &quot;9cd57970-a48e-420c-b51d-b01a4c65f110&quot;,
+        &quot;autobot_id&quot;: &quot;9cd57961-3d79-4ecd-9ac7-7ad94aefa144&quot;,
         &quot;title&quot;: &quot;ea molestias quasi exercitationem repellat qui ipsa sit aut&quot;,
         &quot;body&quot;: &quot;et iusto sed quo iure\nvoluptatem occaecati omnis eligendi aut ad\nvoluptatem doloribus vel accusantium quis pariatur\nmolestiae porro eius odio et labore et velit aut&quot;,
-        &quot;created_at&quot;: &quot;2024-08-23T07:46:52.000000Z&quot;,
-        &quot;updated_at&quot;: &quot;2024-08-23T07:46:52.000000Z&quot;
+        &quot;created_at&quot;: &quot;2024-08-23T09:53:13.000000Z&quot;,
+        &quot;updated_at&quot;: &quot;2024-08-23T09:53:13.000000Z&quot;
     },
     {
-        &quot;id&quot;: &quot;9cd54c41-5eef-46db-9ac0-6b1ab3ded9e8&quot;,
-        &quot;autobot_id&quot;: &quot;9cd54948-e8d9-4d8e-a694-18f4aa1a1ff7&quot;,
+        &quot;id&quot;: &quot;9cd57971-c988-4e5e-ada8-28c4d7a86034&quot;,
+        &quot;autobot_id&quot;: &quot;9cd57961-3d79-4ecd-9ac7-7ad94aefa144&quot;,
         &quot;title&quot;: &quot;eum et est occaecati&quot;,
         &quot;body&quot;: &quot;ullam et saepe reiciendis voluptatem adipisci\nsit amet autem assumenda provident rerum culpa\nquis hic commodi nesciunt rem tenetur doloremque ipsam iure\nquis sunt voluptatem rerum illo velit&quot;,
-        &quot;created_at&quot;: &quot;2024-08-23T07:46:53.000000Z&quot;,
-        &quot;updated_at&quot;: &quot;2024-08-23T07:46:53.000000Z&quot;
+        &quot;created_at&quot;: &quot;2024-08-23T09:53:14.000000Z&quot;,
+        &quot;updated_at&quot;: &quot;2024-08-23T09:53:14.000000Z&quot;
     },
     {
-        &quot;id&quot;: &quot;9cd54c42-83f6-4966-8df9-46339bd2575c&quot;,
-        &quot;autobot_id&quot;: &quot;9cd54948-e8d9-4d8e-a694-18f4aa1a1ff7&quot;,
+        &quot;id&quot;: &quot;9cd57973-1ef1-404d-b55c-90f5b9d7b57d&quot;,
+        &quot;autobot_id&quot;: &quot;9cd57961-3d79-4ecd-9ac7-7ad94aefa144&quot;,
         &quot;title&quot;: &quot;nesciunt quas odio&quot;,
         &quot;body&quot;: &quot;repudiandae veniam quaerat sunt sed\nalias aut fugiat sit autem sed est\nvoluptatem omnis possimus esse voluptatibus quis\nest aut tenetur dolor neque&quot;,
-        &quot;created_at&quot;: &quot;2024-08-23T07:46:53.000000Z&quot;,
-        &quot;updated_at&quot;: &quot;2024-08-23T07:46:53.000000Z&quot;
+        &quot;created_at&quot;: &quot;2024-08-23T09:53:15.000000Z&quot;,
+        &quot;updated_at&quot;: &quot;2024-08-23T09:53:15.000000Z&quot;
     },
     {
-        &quot;id&quot;: &quot;9cd54c43-cef8-474c-9a71-573c0384215b&quot;,
-        &quot;autobot_id&quot;: &quot;9cd54948-e8d9-4d8e-a694-18f4aa1a1ff7&quot;,
+        &quot;id&quot;: &quot;9cd57974-556b-4280-a9ff-d87ce875f691&quot;,
+        &quot;autobot_id&quot;: &quot;9cd57961-3d79-4ecd-9ac7-7ad94aefa144&quot;,
         &quot;title&quot;: &quot;dolorem eum magni eos aperiam quia&quot;,
         &quot;body&quot;: &quot;ut aspernatur corporis harum nihil quis provident sequi\nmollitia nobis aliquid molestiae\nperspiciatis et ea nemo ab reprehenderit accusantium quas\nvoluptate dolores velit et doloremque molestiae&quot;,
-        &quot;created_at&quot;: &quot;2024-08-23T07:46:54.000000Z&quot;,
-        &quot;updated_at&quot;: &quot;2024-08-23T07:46:54.000000Z&quot;
+        &quot;created_at&quot;: &quot;2024-08-23T09:53:16.000000Z&quot;,
+        &quot;updated_at&quot;: &quot;2024-08-23T09:53:16.000000Z&quot;
     },
     {
-        &quot;id&quot;: &quot;9cd54c45-14ab-46e6-a62b-3570a84e8118&quot;,
-        &quot;autobot_id&quot;: &quot;9cd54948-e8d9-4d8e-a694-18f4aa1a1ff7&quot;,
+        &quot;id&quot;: &quot;9cd57975-674d-4e29-964a-e158317c83b1&quot;,
+        &quot;autobot_id&quot;: &quot;9cd57961-3d79-4ecd-9ac7-7ad94aefa144&quot;,
         &quot;title&quot;: &quot;magnam facilis autem&quot;,
         &quot;body&quot;: &quot;dolore placeat quibusdam ea quo vitae\nmagni quis enim qui quis quo nemo aut saepe\nquidem repellat excepturi ut quia\nsunt ut sequi eos ea sed quas&quot;,
-        &quot;created_at&quot;: &quot;2024-08-23T07:46:55.000000Z&quot;,
-        &quot;updated_at&quot;: &quot;2024-08-23T07:46:55.000000Z&quot;
+        &quot;created_at&quot;: &quot;2024-08-23T09:53:17.000000Z&quot;,
+        &quot;updated_at&quot;: &quot;2024-08-23T09:53:17.000000Z&quot;
     },
     {
-        &quot;id&quot;: &quot;9cd54c46-42ac-4be0-9270-16e2137c10ca&quot;,
-        &quot;autobot_id&quot;: &quot;9cd54948-e8d9-4d8e-a694-18f4aa1a1ff7&quot;,
+        &quot;id&quot;: &quot;9cd57976-7566-4120-a2e6-140ed135a42e&quot;,
+        &quot;autobot_id&quot;: &quot;9cd57961-3d79-4ecd-9ac7-7ad94aefa144&quot;,
         &quot;title&quot;: &quot;dolorem dolore est ipsam&quot;,
         &quot;body&quot;: &quot;dignissimos aperiam dolorem qui eum\nfacilis quibusdam animi sint suscipit qui sint possimus cum\nquaerat magni maiores excepturi\nipsam ut commodi dolor voluptatum modi aut vitae&quot;,
-        &quot;created_at&quot;: &quot;2024-08-23T07:46:56.000000Z&quot;,
-        &quot;updated_at&quot;: &quot;2024-08-23T07:46:56.000000Z&quot;
+        &quot;created_at&quot;: &quot;2024-08-23T09:53:17.000000Z&quot;,
+        &quot;updated_at&quot;: &quot;2024-08-23T09:53:17.000000Z&quot;
     },
     {
-        &quot;id&quot;: &quot;9cd54c47-652f-44f4-8593-30d6d19a0405&quot;,
-        &quot;autobot_id&quot;: &quot;9cd54948-e8d9-4d8e-a694-18f4aa1a1ff7&quot;,
+        &quot;id&quot;: &quot;9cd57977-9a31-48d1-a737-e444eae3564f&quot;,
+        &quot;autobot_id&quot;: &quot;9cd57961-3d79-4ecd-9ac7-7ad94aefa144&quot;,
         &quot;title&quot;: &quot;nesciunt iure omnis dolorem tempora et accusantium&quot;,
         &quot;body&quot;: &quot;consectetur animi nesciunt iure dolore\nenim quia ad\nveniam autem ut quam aut nobis\net est aut quod aut provident voluptas autem voluptas&quot;,
-        &quot;created_at&quot;: &quot;2024-08-23T07:46:57.000000Z&quot;,
-        &quot;updated_at&quot;: &quot;2024-08-23T07:46:57.000000Z&quot;
+        &quot;created_at&quot;: &quot;2024-08-23T09:53:18.000000Z&quot;,
+        &quot;updated_at&quot;: &quot;2024-08-23T09:53:18.000000Z&quot;
     },
     {
-        &quot;id&quot;: &quot;9cd54c48-935e-45b6-be96-ad55274b04b4&quot;,
-        &quot;autobot_id&quot;: &quot;9cd54948-e8d9-4d8e-a694-18f4aa1a1ff7&quot;,
+        &quot;id&quot;: &quot;9cd57979-4ab4-4e63-b5f6-ec306c308db5&quot;,
+        &quot;autobot_id&quot;: &quot;9cd57961-3d79-4ecd-9ac7-7ad94aefa144&quot;,
         &quot;title&quot;: &quot;optio molestias id quia eum&quot;,
         &quot;body&quot;: &quot;quo et expedita modi cum officia vel magni\ndoloribus qui repudiandae\nvero nisi sit\nquos veniam quod sed accusamus veritatis error&quot;,
-        &quot;created_at&quot;: &quot;2024-08-23T07:46:57.000000Z&quot;,
-        &quot;updated_at&quot;: &quot;2024-08-23T07:46:57.000000Z&quot;
+        &quot;created_at&quot;: &quot;2024-08-23T09:53:19.000000Z&quot;,
+        &quot;updated_at&quot;: &quot;2024-08-23T09:53:19.000000Z&quot;
     }
 ]</code>
  </pre>
@@ -864,12 +888,24 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="autobot_id"                data-endpoint="GETapi-autobots--autobot_id--posts"
-               value="9cd54948-e8d9-4d8e-a694-18f4aa1a1ff7"
+               value="9cd57961-3d79-4ecd-9ac7-7ad94aefa144"
                data-component="url">
     <br>
-<p>The ID of the autobot. Example: <code>9cd54948-e8d9-4d8e-a694-18f4aa1a1ff7</code></p>
+<p>The ID of the autobot. Example: <code>9cd57961-3d79-4ecd-9ac7-7ad94aefa144</code></p>
             </div>
-                    </form>
+                        <h4 class="fancy-heading-panel"><b>Query Parameters</b></h4>
+                                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>offset</code></b>&nbsp;&nbsp;
+<small>string</small>&nbsp;
+<i>optional</i> &nbsp;
+                <input type="text" style="display: none"
+                              name="offset"                data-endpoint="GETapi-autobots--autobot_id--posts"
+               value="temporibus"
+               data-component="query">
+    <br>
+<p>Field determine where to start selecting data from. Defaults to '0' Example: <code>temporibus</code></p>
+            </div>
+                </form>
 
                     <h2 id="endpoints-GETapi-autobots--autobot_id--posts--post_id-">GET api/autobots/{autobot_id}/posts/{post_id}</h2>
 
@@ -884,14 +920,14 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "http://autobot.test/api/autobots/9cd54948-e8d9-4d8e-a694-18f4aa1a1ff7/posts/9cd54c3d-4d5d-4108-ab87-c1b72725c9e3" \
+    --get "http://autobot.test/api/autobots/9cd57961-3d79-4ecd-9ac7-7ad94aefa144/posts/9cd5796d-989e-4cd1-b8e2-738934b29cfb" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://autobot.test/api/autobots/9cd54948-e8d9-4d8e-a694-18f4aa1a1ff7/posts/9cd54c3d-4d5d-4108-ab87-c1b72725c9e3"
+    "http://autobot.test/api/autobots/9cd57961-3d79-4ecd-9ac7-7ad94aefa144/posts/9cd5796d-989e-4cd1-b8e2-738934b29cfb"
 );
 
 const headers = {
@@ -922,12 +958,12 @@ access-control-allow-origin: *
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
-    &quot;id&quot;: &quot;9cd54c3d-4d5d-4108-ab87-c1b72725c9e3&quot;,
-    &quot;autobot_id&quot;: &quot;9cd54948-e8d9-4d8e-a694-18f4aa1a1ff7&quot;,
+    &quot;id&quot;: &quot;9cd5796d-989e-4cd1-b8e2-738934b29cfb&quot;,
+    &quot;autobot_id&quot;: &quot;9cd57961-3d79-4ecd-9ac7-7ad94aefa144&quot;,
     &quot;title&quot;: &quot;sunt aut facere repellat provident occaecati excepturi optio reprehenderit&quot;,
     &quot;body&quot;: &quot;quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto&quot;,
-    &quot;created_at&quot;: &quot;2024-08-23T07:46:50.000000Z&quot;,
-    &quot;updated_at&quot;: &quot;2024-08-23T07:46:50.000000Z&quot;
+    &quot;created_at&quot;: &quot;2024-08-23T09:53:11.000000Z&quot;,
+    &quot;updated_at&quot;: &quot;2024-08-23T09:53:11.000000Z&quot;
 }</code>
  </pre>
     </span>
@@ -1007,10 +1043,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="autobot_id"                data-endpoint="GETapi-autobots--autobot_id--posts--post_id-"
-               value="9cd54948-e8d9-4d8e-a694-18f4aa1a1ff7"
+               value="9cd57961-3d79-4ecd-9ac7-7ad94aefa144"
                data-component="url">
     <br>
-<p>The ID of the autobot. Example: <code>9cd54948-e8d9-4d8e-a694-18f4aa1a1ff7</code></p>
+<p>The ID of the autobot. Example: <code>9cd57961-3d79-4ecd-9ac7-7ad94aefa144</code></p>
             </div>
                     <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>post_id</code></b>&nbsp;&nbsp;
@@ -1018,10 +1054,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="post_id"                data-endpoint="GETapi-autobots--autobot_id--posts--post_id-"
-               value="9cd54c3d-4d5d-4108-ab87-c1b72725c9e3"
+               value="9cd5796d-989e-4cd1-b8e2-738934b29cfb"
                data-component="url">
     <br>
-<p>The ID of the post. Example: <code>9cd54c3d-4d5d-4108-ab87-c1b72725c9e3</code></p>
+<p>The ID of the post. Example: <code>9cd5796d-989e-4cd1-b8e2-738934b29cfb</code></p>
             </div>
                     </form>
 
@@ -1038,15 +1074,21 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "http://autobot.test/api/autobots/9cd54948-e8d9-4d8e-a694-18f4aa1a1ff7/posts/9cd54c3d-4d5d-4108-ab87-c1b72725c9e3/comments" \
+    --get "http://autobot.test/api/autobots/9cd57961-3d79-4ecd-9ac7-7ad94aefa144/posts/9cd5796d-989e-4cd1-b8e2-738934b29cfb/comments?offset=eligendi" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://autobot.test/api/autobots/9cd54948-e8d9-4d8e-a694-18f4aa1a1ff7/posts/9cd54c3d-4d5d-4108-ab87-c1b72725c9e3/comments"
+    "http://autobot.test/api/autobots/9cd57961-3d79-4ecd-9ac7-7ad94aefa144/posts/9cd5796d-989e-4cd1-b8e2-738934b29cfb/comments"
 );
+
+const params = {
+    "offset": "eligendi",
+};
+Object.keys(params)
+    .forEach(key =&gt; url.searchParams.append(key, params[key]));
 
 const headers = {
     "Content-Type": "application/json",
@@ -1075,7 +1117,98 @@ x-ratelimit-remaining: 4
 access-control-allow-origin: *
  </code></pre></details>         <pre>
 
-<code class="language-json" style="max-height: 300px;">[]</code>
+<code class="language-json" style="max-height: 300px;">[
+    {
+        &quot;id&quot;: &quot;9cd579fa-c410-4099-90b5-2fb58f812a67&quot;,
+        &quot;post_id&quot;: &quot;9cd5796d-989e-4cd1-b8e2-738934b29cfb&quot;,
+        &quot;name&quot;: &quot;id labore ex et quam laborum&quot;,
+        &quot;email&quot;: &quot;Eliseo@gardner.biz&quot;,
+        &quot;body&quot;: &quot;laudantium enim quasi est quidem magnam voluptate ipsam eos\ntempora quo necessitatibus\ndolor quam autem quasi\nreiciendis et nam sapiente accusantium&quot;,
+        &quot;created_at&quot;: &quot;2024-08-23T09:54:44.000000Z&quot;,
+        &quot;updated_at&quot;: &quot;2024-08-23T09:54:44.000000Z&quot;
+    },
+    {
+        &quot;id&quot;: &quot;9cd579fa-f5a9-4e47-b0ec-abb64de3bc85&quot;,
+        &quot;post_id&quot;: &quot;9cd5796d-989e-4cd1-b8e2-738934b29cfb&quot;,
+        &quot;name&quot;: &quot;quo vero reiciendis velit similique earum&quot;,
+        &quot;email&quot;: &quot;Jayne_Kuhic@sydney.com&quot;,
+        &quot;body&quot;: &quot;est natus enim nihil est dolore omnis voluptatem numquam\net omnis occaecati quod ullam at\nvoluptatem error expedita pariatur\nnihil sint nostrum voluptatem reiciendis et&quot;,
+        &quot;created_at&quot;: &quot;2024-08-23T09:54:44.000000Z&quot;,
+        &quot;updated_at&quot;: &quot;2024-08-23T09:54:44.000000Z&quot;
+    },
+    {
+        &quot;id&quot;: &quot;9cd579fb-25d3-41d7-b901-773ab480e975&quot;,
+        &quot;post_id&quot;: &quot;9cd5796d-989e-4cd1-b8e2-738934b29cfb&quot;,
+        &quot;name&quot;: &quot;odio adipisci rerum aut animi&quot;,
+        &quot;email&quot;: &quot;Nikita@garfield.biz&quot;,
+        &quot;body&quot;: &quot;quia molestiae reprehenderit quasi aspernatur\naut expedita occaecati aliquam eveniet laudantium\nomnis quibusdam delectus saepe quia accusamus maiores nam est\ncum et ducimus et vero voluptates excepturi deleniti ratione&quot;,
+        &quot;created_at&quot;: &quot;2024-08-23T09:54:44.000000Z&quot;,
+        &quot;updated_at&quot;: &quot;2024-08-23T09:54:44.000000Z&quot;
+    },
+    {
+        &quot;id&quot;: &quot;9cd579fb-5684-4e95-9c6b-f667b8212a59&quot;,
+        &quot;post_id&quot;: &quot;9cd5796d-989e-4cd1-b8e2-738934b29cfb&quot;,
+        &quot;name&quot;: &quot;alias odio sit&quot;,
+        &quot;email&quot;: &quot;Lew@alysha.tv&quot;,
+        &quot;body&quot;: &quot;non et atque\noccaecati deserunt quas accusantium unde odit nobis qui voluptatem\nquia voluptas consequuntur itaque dolor\net qui rerum deleniti ut occaecati&quot;,
+        &quot;created_at&quot;: &quot;2024-08-23T09:54:44.000000Z&quot;,
+        &quot;updated_at&quot;: &quot;2024-08-23T09:54:44.000000Z&quot;
+    },
+    {
+        &quot;id&quot;: &quot;9cd579fb-8930-4934-b977-95d50dc49717&quot;,
+        &quot;post_id&quot;: &quot;9cd5796d-989e-4cd1-b8e2-738934b29cfb&quot;,
+        &quot;name&quot;: &quot;vero eaque aliquid doloribus et culpa&quot;,
+        &quot;email&quot;: &quot;Hayden@althea.biz&quot;,
+        &quot;body&quot;: &quot;harum non quasi et ratione\ntempore iure ex voluptates in ratione\nharum architecto fugit inventore cupiditate\nvoluptates magni quo et&quot;,
+        &quot;created_at&quot;: &quot;2024-08-23T09:54:44.000000Z&quot;,
+        &quot;updated_at&quot;: &quot;2024-08-23T09:54:44.000000Z&quot;
+    },
+    {
+        &quot;id&quot;: &quot;9cd579fb-ba22-4f06-baf7-265c25f3225f&quot;,
+        &quot;post_id&quot;: &quot;9cd5796d-989e-4cd1-b8e2-738934b29cfb&quot;,
+        &quot;name&quot;: &quot;et fugit eligendi deleniti quidem qui sint nihil autem&quot;,
+        &quot;email&quot;: &quot;Presley.Mueller@myrl.com&quot;,
+        &quot;body&quot;: &quot;doloribus at sed quis culpa deserunt consectetur qui praesentium\naccusamus fugiat dicta\nvoluptatem rerum ut voluptate autem\nvoluptatem repellendus aspernatur dolorem in&quot;,
+        &quot;created_at&quot;: &quot;2024-08-23T09:54:45.000000Z&quot;,
+        &quot;updated_at&quot;: &quot;2024-08-23T09:54:45.000000Z&quot;
+    },
+    {
+        &quot;id&quot;: &quot;9cd579fb-eb1b-4ef8-ac98-307d4ae8a007&quot;,
+        &quot;post_id&quot;: &quot;9cd5796d-989e-4cd1-b8e2-738934b29cfb&quot;,
+        &quot;name&quot;: &quot;repellat consequatur praesentium vel minus molestias voluptatum&quot;,
+        &quot;email&quot;: &quot;Dallas@ole.me&quot;,
+        &quot;body&quot;: &quot;maiores sed dolores similique labore et inventore et\nquasi temporibus esse sunt id et\neos voluptatem aliquam\naliquid ratione corporis molestiae mollitia quia et magnam dolor&quot;,
+        &quot;created_at&quot;: &quot;2024-08-23T09:54:45.000000Z&quot;,
+        &quot;updated_at&quot;: &quot;2024-08-23T09:54:45.000000Z&quot;
+    },
+    {
+        &quot;id&quot;: &quot;9cd579fc-1bae-4905-aee1-e71c79d924ae&quot;,
+        &quot;post_id&quot;: &quot;9cd5796d-989e-4cd1-b8e2-738934b29cfb&quot;,
+        &quot;name&quot;: &quot;et omnis dolorem&quot;,
+        &quot;email&quot;: &quot;Mallory_Kunze@marie.org&quot;,
+        &quot;body&quot;: &quot;ut voluptatem corrupti velit\nad voluptatem maiores\net nisi velit vero accusamus maiores\nvoluptates quia aliquid ullam eaque&quot;,
+        &quot;created_at&quot;: &quot;2024-08-23T09:54:45.000000Z&quot;,
+        &quot;updated_at&quot;: &quot;2024-08-23T09:54:45.000000Z&quot;
+    },
+    {
+        &quot;id&quot;: &quot;9cd579fc-4d18-4a96-8c21-77052a7ee108&quot;,
+        &quot;post_id&quot;: &quot;9cd5796d-989e-4cd1-b8e2-738934b29cfb&quot;,
+        &quot;name&quot;: &quot;provident id voluptas&quot;,
+        &quot;email&quot;: &quot;Meghan_Littel@rene.us&quot;,
+        &quot;body&quot;: &quot;sapiente assumenda molestiae atque\nadipisci laborum distinctio aperiam et ab ut omnis\net occaecati aspernatur odit sit rem expedita\nquas enim ipsam minus&quot;,
+        &quot;created_at&quot;: &quot;2024-08-23T09:54:45.000000Z&quot;,
+        &quot;updated_at&quot;: &quot;2024-08-23T09:54:45.000000Z&quot;
+    },
+    {
+        &quot;id&quot;: &quot;9cd579fc-7df2-46f3-85fb-aab715c39814&quot;,
+        &quot;post_id&quot;: &quot;9cd5796d-989e-4cd1-b8e2-738934b29cfb&quot;,
+        &quot;name&quot;: &quot;eaque et deleniti atque tenetur ut quo ut&quot;,
+        &quot;email&quot;: &quot;Carmen_Keeling@caroline.name&quot;,
+        &quot;body&quot;: &quot;voluptate iusto quis nobis reprehenderit ipsum amet nulla\nquia quas dolores velit et non\naut quia necessitatibus\nnostrum quaerat nulla et accusamus nisi facilis&quot;,
+        &quot;created_at&quot;: &quot;2024-08-23T09:54:45.000000Z&quot;,
+        &quot;updated_at&quot;: &quot;2024-08-23T09:54:45.000000Z&quot;
+    }
+]</code>
  </pre>
     </span>
 <span id="execution-results-GETapi-autobots--autobot_id--posts--post_id--comments" hidden>
@@ -1154,10 +1287,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="autobot_id"                data-endpoint="GETapi-autobots--autobot_id--posts--post_id--comments"
-               value="9cd54948-e8d9-4d8e-a694-18f4aa1a1ff7"
+               value="9cd57961-3d79-4ecd-9ac7-7ad94aefa144"
                data-component="url">
     <br>
-<p>The ID of the autobot. Example: <code>9cd54948-e8d9-4d8e-a694-18f4aa1a1ff7</code></p>
+<p>The ID of the autobot. Example: <code>9cd57961-3d79-4ecd-9ac7-7ad94aefa144</code></p>
             </div>
                     <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>post_id</code></b>&nbsp;&nbsp;
@@ -1165,12 +1298,24 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="post_id"                data-endpoint="GETapi-autobots--autobot_id--posts--post_id--comments"
-               value="9cd54c3d-4d5d-4108-ab87-c1b72725c9e3"
+               value="9cd5796d-989e-4cd1-b8e2-738934b29cfb"
                data-component="url">
     <br>
-<p>The ID of the post. Example: <code>9cd54c3d-4d5d-4108-ab87-c1b72725c9e3</code></p>
+<p>The ID of the post. Example: <code>9cd5796d-989e-4cd1-b8e2-738934b29cfb</code></p>
             </div>
-                    </form>
+                        <h4 class="fancy-heading-panel"><b>Query Parameters</b></h4>
+                                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>offset</code></b>&nbsp;&nbsp;
+<small>string</small>&nbsp;
+<i>optional</i> &nbsp;
+                <input type="text" style="display: none"
+                              name="offset"                data-endpoint="GETapi-autobots--autobot_id--posts--post_id--comments"
+               value="eligendi"
+               data-component="query">
+    <br>
+<p>Field determine where to start selecting data from. Defaults to '0' Example: <code>eligendi</code></p>
+            </div>
+                </form>
 
             
 
